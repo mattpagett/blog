@@ -157,3 +157,5 @@ _docs
 .sesskey
 /.quarto/
 **/*.quarto_ipynb
+_site/
+.quarto/
