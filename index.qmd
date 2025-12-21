@@ -9,7 +9,10 @@ format:
 
 Welcome to my personal website.
 
-My research interests include AI and robotics accountability, trustworthiness, and explainability.
+## Research interests
+
+- AI and robotics explainability, trustworthiness, and accountability
+- Digital humanities
 
 ## Recent projects
 

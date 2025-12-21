@@ -4,7 +4,14 @@
     "href": "index.html",
     "title": "Matt Pagett",
     "section": "",
-    "text": "Welcome to my personal website.\nMy research interests include AI and robotics accountability, trustworthiness, and explainability."
+    "text": "Welcome to my personal website."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Matt Pagett",
+    "section": "Research interests",
+    "text": "Research interests\n\nAI and robotics explainability, trustworthiness, and accountability\nDigital humanities"
   },
   {
     "objectID": "index.html#recent-projects",
