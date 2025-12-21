@@ -2,12 +2,14 @@
 title: "Matt Pagett"
 format:
   html:
-    theme: cyborg  # or slate, darkly, etc.
+    theme: cyborg  
     code-background: true
     highlight-style: github-dark
 ---
 
-Welcome to my personal website, focused on my research interests in **AI accountability and explainability**.
+Welcome to my personal website.
+
+My research interests include AI and robotics accountability, trustworthiness, and explainability.
 
 ## Recent projects
 
@@ -20,12 +22,11 @@ Welcome to my personal website, focused on my research interests in **AI account
 
 ### Digital humanities
 
-[Cervantes Reader](https://flamboyant-charm-sprints-3mv6ip.solve.it.com) (V0) - AI-powered narration/analysis for early modern literature
+[Cervantes Reader](https://flamboyant-charm-sprints-3mv6ip.solve.it.com) (v0) - AI-powered narration/analysis for early modern literature
 
 
-## About me
-
-PhD in Romance Languages (University of Pennsylvania)
+## See also
 
 [LinkedIn](https://www.linkedin.com/in/matthew-pagett/)
+
 [Github](https://github.com/mattpagett)

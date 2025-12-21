@@ -4,20 +4,20 @@
     "href": "index.html",
     "title": "Matt Pagett",
     "section": "",
-    "text": "Welcome to my personal website, focused on my research interests in AI accountability and explainability."
+    "text": "Welcome to my personal website.\nMy research interests include AI and robotics accountability, trustworthiness, and explainability."
   },
   {
     "objectID": "index.html#recent-projects",
     "href": "index.html#recent-projects",
     "title": "Matt Pagett",
     "section": "Recent projects",
-    "text": "Recent projects\n\nHackathons\nComparative LLM methods for social media bot detection (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)\nProtocop - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)\n\n\nDigital humanities\nCervantes Reader (V0) - AI-powered narration/analysis for early modern literature"
+    "text": "Recent projects\n\nHackathons\nComparative LLM methods for social media bot detection (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)\nProtocop - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)\n\n\nDigital humanities\nCervantes Reader (v0) - AI-powered narration/analysis for early modern literature"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#see-also",
+    "href": "index.html#see-also",
     "title": "Matt Pagett",
-    "section": "About me",
-    "text": "About me\nPhD in Romance Languages (University of Pennsylvania)\nLinkedIn Github"
+    "section": "See also",
+    "text": "See also\nLinkedIn\nGithub"
   }
 ]
