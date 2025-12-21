@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "quarto render"
+    "build": "curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.554/quarto-1.4.554-linux-amd64.deb && sudo dpkg -i quarto-1.4.554-linux-amd64.deb && quarto render"
   }
 }
