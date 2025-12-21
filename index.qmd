@@ -11,20 +11,21 @@ Welcome to my personal website, focused on my research interests in **AI account
 
 ## Recent projects
 
-### Hackathon projects:
+### Hackathons
 
-Comparative LLM methods for social media bot detection (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
+[Comparative LLM methods for social media bot detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4) (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
 
-Protocop - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)
+[Protocop](https://bsky.app/profile/protocop.bsky.social) - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)
 
 
-### Digital humanities:
+### Digital humanities
 
-Cervantes Reader (V0) - AI-powered narration/analysis for early modern literature
+[Cervantes Reader](https://flamboyant-charm-sprints-3mv6ip.solve.it.com) (V0) - AI-powered narration/analysis for early modern literature
 
 
 ## About me
 
 PhD in Romance Languages (University of Pennsylvania)
 
-
+[LinkedIn](https://www.linkedin.com/in/matthew-pagett/)
+[Github](https://github.com/mattpagett)
