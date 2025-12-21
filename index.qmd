@@ -1,0 +1,30 @@
+---
+title: "Matt Pagett"
+format:
+  html:
+    theme: cyborg  # or slate, darkly, etc.
+    code-background: true
+    highlight-style: github-dark
+---
+
+Welcome to my personal website, focused on my research interests in **AI accountability and explainability**.
+
+## Recent projects
+
+### Hackathon projects:
+
+Comparative LLM methods for social media bot detection (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
+
+Protocop - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)
+
+
+### Digital humanities:
+
+Cervantes Reader (V0) - AI-powered narration/analysis for early modern literature
+
+
+## About me
+
+PhD in Romance Languages (University of Pennsylvania)
+
+
