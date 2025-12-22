@@ -14,7 +14,7 @@ Welcome to my personal website.
 - AI and robotics explainability, trustworthiness, and accountability
 - Digital humanities
 
-## Recent projects
+## Select projects
 
 ### Hackathons
 
