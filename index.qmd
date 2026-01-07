@@ -13,6 +13,7 @@ Welcome to my personal website.
 
 - AI and robotics explainability, trustworthiness, and accountability
 - Digital humanities
+- World models
 
 ## Select projects
 
