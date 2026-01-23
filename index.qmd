@@ -17,7 +17,13 @@ Welcome to my personal website.
 
 ## Select projects
 
+### Research projects
+
+[EMPO](https://github.com/mensch72/empo) - Empowerment-based AI agents (contributing in connection with [AI Safety Initiative Groningen](https://www.aisig.org/research-hub))
+
 ### Hackathons
+
+[Adversarial LLM span detection for social sycophancy observation](https://github.com/mattpagett/sycoverse) (Entry submitted to Apart Research AI Manipulation Hackathon - Jan 2026)
 
 [Comparative LLM methods for social media bot detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4) (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
 
