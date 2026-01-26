@@ -36,7 +36,20 @@ Welcome to my personal website.
 
 [Artificial Quartet](https://github.com/mattpagett/artificial-quartet).  An early attempt to use generative AI to write a play.  Submitted as an entry to the Financial Times 2020 Weekend Festival theater contest.
 
-## See also
+
+## Resources
+
+### AI Safety
+
+[BlueDot](https://bluedot.org/) provides education about AI safety and governance.  I completed the AGI Strategy and Technical AI Safety courses in 2025 and recommend them to anyone interested in AI risk.
+
+[ARENA](https://www.arena.education/) - detailed technical AI safety course.  I've formed a self-study group on the ARENA Slack channel. 
+
+### Software Development
+
+[SolveIt](https://newsi.fast.ai/?via_id=oi9lxe79) is a course, a method, and a platform to use LLMs thoughtfully in software development (and other areas, like writing).  It is led by Jeremy Howard whose [Fast.AI course on Deep Learning](https://course.fast.ai/) remains as relevant and useful as when I first took it in 2019.
+
+## Find me at
 
 [LinkedIn](https://www.linkedin.com/in/matthew-pagett/)
 
