@@ -19,16 +19,16 @@ Welcome to my personal website.
 
 ### Research projects
 
-[EMPO](https://github.com/mensch72/empo) - Empowerment-based AI agents (contributing in connection with [AI Safety Initiative Groningen](https://www.aisig.org/research-hub))
+[EMPO](https://github.com/mensch72/empo) - Empowerment-based AI agents (led by Jobst Heitzig; I am contributing in connection with [AI Safety Initiative Groningen](https://www.aisig.org/research-hub))
 
 ### Hackathons
 
 [Cross-Border Agentic AI Compliance (CBAAC): Embedding Regulatory and Cultural Risk Compliance into Agentic Communication
-](https://apartresearch.com/project/crossborder-agentic-ai-compliance-cbaac-embedding-regulatory-and-cultural-risk-compliance-into-agentic-communication-p4oo) (Submitted to Apart Research Technical Governance Hackathon - February 2026)
+](https://apartresearch.com/project/crossborder-agentic-ai-compliance-cbaac-embedding-regulatory-and-cultural-risk-compliance-into-agentic-communication-p4oo) (with Tomoko Mitsuoka, submitted to Apart Research Technical Governance Hackathon - February 2026)
 
-[Adversarial LLM span detection for social sycophancy observation](https://github.com/mattpagett/sycoverse) (Submitted to Apart Research AI Manipulation Hackathon - Jan 2026)
+[Adversarial LLM span detection for social sycophancy observation](https://github.com/mattpagett/sycoverse) (with Pranati Modumudi, submitted to Apart Research AI Manipulation Hackathon - Jan 2026)
 
-[Comparative LLM methods for social media bot detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4) (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
+[Comparative LLM methods for social media bot detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4) (With Andreas Raaskov. 2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
 
 [Protocop](https://bsky.app/profile/protocop.bsky.social) - social media moderation toolkit using MCP (Entered into MCP 1st Anniversary Hackathon, November 2025)
 
