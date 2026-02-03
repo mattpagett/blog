@@ -24,9 +24,9 @@ Welcome to my personal website.
 ### Hackathons
 
 [Cross-Border Agentic AI Compliance (CBAAC): Embedding Regulatory and Cultural Risk Compliance into Agentic Communication
-](https://apartresearch.com/project/crossborder-agentic-ai-compliance-cbaac-embedding-regulatory-and-cultural-risk-compliance-into-agentic-communication-p4oo) - (Entry submitted to Apart Research Technical Governance Hackathon - February 2026)
+](https://apartresearch.com/project/crossborder-agentic-ai-compliance-cbaac-embedding-regulatory-and-cultural-risk-compliance-into-agentic-communication-p4oo) (Submitted to Apart Research Technical Governance Hackathon - February 2026)
 
-[Adversarial LLM span detection for social sycophancy observation](https://github.com/mattpagett/sycoverse) (Entry submitted to Apart Research AI Manipulation Hackathon - Jan 2026)
+[Adversarial LLM span detection for social sycophancy observation](https://github.com/mattpagett/sycoverse) (Submitted to Apart Research AI Manipulation Hackathon - Jan 2026)
 
 [Comparative LLM methods for social media bot detection](https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4) (2nd place winner, November 2025 Apart Defensive Acceleration Hackathon)
 
