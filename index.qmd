@@ -41,13 +41,15 @@ Welcome to my personal website.
 
 ### AI Safety
 
+[ENAIS](https://www.enais.co/collab) - The European Network for AI Safety offers worldwide AI safety education. I'm a faciliator for the Winter 2026 AI Safety Collab.
+
 [BlueDot](https://bluedot.org/) provides education about AI safety and governance.  I completed the AGI Strategy and Technical AI Safety courses in 2025 and recommend them to anyone interested in AI risk.
 
 [ARENA](https://www.arena.education/) - detailed technical AI safety course.  I've formed a self-study group on the ARENA Slack channel. 
 
 ### Software Development
 
-[SolveIt](https://newsi.fast.ai/?via_id=oi9lxe79) is a course, a method, and a platform to use LLMs thoughtfully in software development (and other areas, like writing).  It is led by Jeremy Howard whose [Fast.AI course on Deep Learning](https://course.fast.ai/) remains as relevant and useful as when I first took it in 2019.
+[SolveIt](https://newsi.fast.ai/?via_id=oi9lxe79) is a course, a method, and a platform to use LLMs thoughtfully in software development (and other areas, like writing).  (*This is an affiliate link - I'll earn a commission and you'll get a discount if you sign up using this link*).  It is led by Jeremy Howard whose [Fast.AI course on Deep Learning](https://course.fast.ai/) remains as relevant and useful as when I first took it in 2019.
 
 ## Find me at
 
