@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Can We Use AI to Detect AI Bots on Social Media?\n\n\n\n\n\n\n\n\nFeb 3, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matt Pagett",
@@ -25,7 +32,7 @@
     "href": "index.html#resources",
     "title": "Matt Pagett",
     "section": "Resources",
-    "text": "Resources\n\nAI Safety\nBlueDot provides education about AI safety and governance. I completed the AGI Strategy and Technical AI Safety courses in 2025 and recommend them to anyone interested in AI risk.\nARENA - detailed technical AI safety course. I’ve formed a self-study group on the ARENA Slack channel.\n\n\nSoftware Development\nSolveIt is a course, a method, and a platform to use LLMs thoughtfully in software development (and other areas, like writing). It is led by Jeremy Howard whose Fast.AI course on Deep Learning remains as relevant and useful as when I first took it in 2019."
+    "text": "Resources\n\nAI Safety\nENAIS - The European Network for AI Safety offers worldwide AI safety education. I’m a faciliator for the Winter 2026 AI Safety Collab.\nBlueDot provides education about AI safety and governance. I completed the AGI Strategy and Technical AI Safety courses in 2025 and recommend them to anyone interested in AI risk.\nARENA - detailed technical AI safety course. I’ve formed a self-study group on the ARENA Slack channel.\n\n\nSoftware Development\nSolveIt is a course, a method, and a platform to use LLMs thoughtfully in software development (and other areas, like writing). (This is an affiliate link - I’ll earn a commission and you’ll get a discount if you sign up using this link). It is led by Jeremy Howard whose Fast.AI course on Deep Learning remains as relevant and useful as when I first took it in 2019."
   },
   {
     "objectID": "index.html#find-me-at",
@@ -33,5 +40,110 @@
     "title": "Matt Pagett",
     "section": "Find me at",
     "text": "Find me at\nLinkedIn\nGithub"
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html",
+    "href": "posts/2026-02-03-bot-detection/index.html",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "",
+    "text": "Short answer: We can reliably detect obvious spam bots using large language models. However, we do not know if we can reliably detect human-like AI accounts.\nThis post summarizes our findings from the November 2025 Apart Research def/acc hackathon, during which Andreas Raaskov and I tested whether large language models (LLMs) could help detect social media bots on Bluesky. One of our key findings: when bots are not obvious, the prompts we use to detect them strongly influence the detection results.\nOur central question: Using only publicly visible content and metadata, can we detect an AI-generated account that mimics a human user?"
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#in-brief",
+    "href": "posts/2026-02-03-bot-detection/index.html#in-brief",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "In brief:",
+    "text": "In brief:\n\nExisting algorithmic methods and our LLM-based methods worked well on obvious spam and scam bots.\nThese methods failed on the hard cases: accounts behaving like ordinary, engaged humans.\nLLM-based detection varies wildly depending on prompt wording (from ~9% to ~91% of the same accounts flagged).\nWithout reliable ground truth, detection results are not interpretable.\nA major risk today is false positives."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#why-bot-detection-is-getting-harder",
+    "href": "posts/2026-02-03-bot-detection/index.html#why-bot-detection-is-getting-harder",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Why Bot Detection Is Getting Harder",
+    "text": "Why Bot Detection Is Getting Harder\nBot detection used to be straightforward. Automated accounts posted constantly, followed thousands of users at once, or repeated the same promotional text. Existing tools are very good at catching that behavior. We found that low-cost LLMs were also able to detect this kind of bot behavior.\nRecently, the quality of bot text generation has improved dramatically. Modern LLMs can produce short, context-appropriate replies that look indistinguishable from normal human participation, especially in settings like social media threads. An account powered by an LLM does not need to post frequently, coordinate with other accounts, or impersonate a specific individual to be disruptive. LLMs can simply participate.\nThis change raises the question we set out to test."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#our-approach",
+    "href": "posts/2026-02-03-bot-detection/index.html#our-approach",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Our Approach",
+    "text": "Our Approach\nTo examine this question, we chose to look at Bluesky posts because its data is openly accessible via the AT Protocol and the platform functions as a high-engagement public discussion space.\nWe evaluated four detection approaches: 1. Follower / following patterns 2. Posting frequency and timing 3. Text-based heuristics (repetition, templating, typical AI phrases) 4. LLMs used as judges, via zero-shot prompts (asking a model to judge without prior examples) asking whether an account appeared AI-generated\nA key challenge with LLM-based detection is prompt sensitivity: the exact wording of the question can dramatically change results. We tested multiple prompt variations to examine this effect.\nWe tested these on two datasets:\n\nA known bot list, consisting mostly of obvious spam and scam accounts\nA real-world sample of 1,000 accounts that had replied to popular posts in active discussion threads\n\nThe second sample was significantly more challenging to analyze, because it contained accounts that looked human-generated."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#obvious-cases-were-easily-detectable",
+    "href": "posts/2026-02-03-bot-detection/index.html#obvious-cases-were-easily-detectable",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Obvious Cases Were Easily Detectable",
+    "text": "Obvious Cases Were Easily Detectable\nAgainst the known bot list, all of our methods worked.\nAlgorithmic methods flagged accounts with non-human posting rates, suspicious follower ratios, and repetitive promotional content. LLM-based judges also detected nearly all of these accounts, across multiple prompt variations. Our findings aligned with prior work and deployed tools, including algorithmic bot detectors, keyword-based heuristics, and network analysis approaches, all of which are generally effective against high-volume spam and coordinated campaigns.\nThis result is reassuring, but not surprising. These are exactly the kinds of bots that existing detection systems are designed to catch. LLMs turn out to be quite good at detecting them too."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#detection-failed-for-the-difficult-cases",
+    "href": "posts/2026-02-03-bot-detection/index.html#detection-failed-for-the-difficult-cases",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Detection Failed for the Difficult Cases",
+    "text": "Detection Failed for the Difficult Cases\nWhen we applied the same methods to the 1,000 accounts drawn from active reply threads, the results changed dramatically.\n\nAlgorithmic Methods:\nAlgorithmic methods detected almost no bots in this sample.\nFollower ratios looked normal. Posting rates fell within human ranges. Text analysis found little repetition or templating. Either there were no sophisticated bots in this sample—or the bots were behaving exactly like humans.\n\n\nLLM-Based Detection:\nLLM-based detection gave unstable responses.\nDifferent prompts produced radically different results:\n\nOne prompt flagged ~16% of accounts as bots\nAnother flagged ~21%\nAnother flagged ~29%\nA highly specific prompt flagged ~91%\n\n\n\n\nBot detection infographic\n\n\n\nThe chart in the center shows how the same accounts receive dramatically different classifications depending only on prompt wording."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#prompt-sensitivity-is-a-core-problem",
+    "href": "posts/2026-02-03-bot-detection/index.html#prompt-sensitivity-is-a-core-problem",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Prompt Sensitivity Is a Core Problem",
+    "text": "Prompt Sensitivity Is a Core Problem\nThe variability in results reveals a deeper issue.\nWhen accounts fall into an ambiguous middle ground—posting frequently, expressing opinions, engaging in debate—LLMs do not have a stable basis for classification. Prompting becomes prompt steering: asking the model to be more or less suspicious directly changes the outcome.\nIn one case, an account was flagged as “likely AI” by all four prompts. Manual review suggested the posts came from a politically engaged human who posting frequently and contextually. The LLM had mistaken this user’s enthusiasm for automation. Without ground truth, we cannot tell which prompt, if any, is accurate.\n\nIs 91% detection uncovering hidden bots?\nOr is it massively over-flagging humans?\nIs 16% conservative and accurate—or simply missing things?\n\nThere is no way to know which method is accurate without ground truth - and how can we assess a ground truth about bots designed to be undetectable?"
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#why-this-matters",
+    "href": "posts/2026-02-03-bot-detection/index.html#why-this-matters",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nTwo risks: one is that undetected bots flood social media spaces, influencing conversations in ways completely unknown to humans on the platform - a major concern. Another risk is false positives. If detection systems cannot distinguish between human-like AI behavior and normal human participation, they will inevitably mislabel real users—especially those who post frequently, argue passionately, or communicate in unusual styles. Both of these risks pose dangers for platform governance, and user trust."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#the-real-bottleneck-ground-truth",
+    "href": "posts/2026-02-03-bot-detection/index.html#the-real-bottleneck-ground-truth",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "The Real Bottleneck: Ground Truth",
+    "text": "The Real Bottleneck: Ground Truth\nThe fundamental barrier for our research is the absence of reliable examples of bots that act like humans.\nWe do not have a validated dataset of human-like, LLM-generated social media accounts that:\n\nBehave organically over time\nShow normal engagement patterns\nAvoid obvious spam or coordination signals\n\nWithout such a reference, detection results cannot be calibrated, compared, or meaningfully evaluated.\nIn short: Our intervention was to test LLM-based detection against realistic, ambiguous accounts rather than obvious bots. The main problem we face now is a lack of reliable reference points."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#what-were-doing-next",
+    "href": "posts/2026-02-03-bot-detection/index.html#what-were-doing-next",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "What We’re Doing Next",
+    "text": "What We’re Doing Next\nOur next step is to build a synthetic reference dataset—not to deploy bots on live platforms, but to generate realistic posting histories offline.\nThe goal is to create controlled examples of accounts that are:\n\nIndistinguishable from humans to casual inspection\nGenerated using multiple models and prompting styles\nAccompanied by realistic metadata and engagement patterns\n\nWith such a dataset, we can ask a meaningful question: are there any signals—textual or behavioral—that consistently distinguish human expression from AI-generated participation?\nIt is possible the answer will be “no.” In that case, knowing that we cannot detect LLM accounts will also be an important finding.\nFuture extensions to this research that we have considered but have not yet attempted include:\n\nLarger samples across different languages and communities\nFew-shot or fine-tuned detection models (using additional training methods to improve the LLM’s detection behavior)\nBroader network-level analysis combined with content analysis - potentially partnering with platform operators\n\nWe intentionally scoped this work to evaluate zero-shot LLM judgment."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#how-this-fits-with-prior-work",
+    "href": "posts/2026-02-03-bot-detection/index.html#how-this-fits-with-prior-work",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "How This Fits with Prior Work",
+    "text": "How This Fits with Prior Work\nPrior work on social media bot detection has focused largely on algorithmic signals (such as posting frequency or network structure) and, more recently, on deep learning classifiers trained on labeled datasets. These approaches work well for coordinated campaigns and spam bots, but they assume access to reliable ground truth.\nRecent experimental work has also shown that modern LLMs can pass controlled Turing-style evaluations, suggesting that text alone may no longer reliably distinguish humans from AI. Work has also been done to show that LLMs can be effective at zero-shot anomaly detection, which we think will be useful to pursue in this context."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#limits-and-open-questions",
+    "href": "posts/2026-02-03-bot-detection/index.html#limits-and-open-questions",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Limits and Open Questions",
+    "text": "Limits and Open Questions\nOur work does not show that sophisticated LLM bots are currently operating on Bluesky. If they are, we have not yet found a reliable method for detecting them. Our work shows how fragile current approaches are when applied to real-world, ambiguous cases.\nThere is also a deeper uncertainty: it may be that human and AI-generated social media behavior has already converged to the point where reliable distinction is impossible using content alone, raising the possibility that human and AI social media behavior may already be converging in these contexts.\nBecause we lack verified examples of human-like AI accounts, we cannot estimate detection accuracy yet. Testing that is the point of the next phase of research.\nEthical note: We deliberately avoided publishing lists of flagged accounts, with the exception of referencing a published known botlist. Our results showed high false-positive risk, including misclassifying human users as bots. Any future dataset or detection work must prioritize harm minimization, anonymization, and informed consent, especially when classifications can affect real people."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#bottom-line",
+    "href": "posts/2026-02-03-bot-detection/index.html#bottom-line",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Bottom Line",
+    "text": "Bottom Line\nCurrent detection methods are effective against obvious bots and spam. These detection methods struggle where the problem matters most - ambiguous cases. This problem will be exacerbated as LLM quality improves.\nOpen questions: - Are there any stable signals that distinguish human and AI participation at all? If so, might these vanish in the future? - Will platforms need to shift from detection to disclosure or provenance mechanisms? - How could moderation systems handle inevitable ambiguity without harming users?\nThese are gaps our research aims to help close."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#code",
+    "href": "posts/2026-02-03-bot-detection/index.html#code",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Code:",
+    "text": "Code:\nhttps://github.com/AndreasRaaskov/Bot-Detector\nContact: matt@mattpagett.dev\nWe’d love to hear your ideas. If you’re working on related problems or have thoughts on approaches we should try, please reach out."
+  },
+  {
+    "objectID": "posts/2026-02-03-bot-detection/index.html#acknowledgements",
+    "href": "posts/2026-02-03-bot-detection/index.html#acknowledgements",
+    "title": "Can We Use AI to Detect AI Bots on Social Media?",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank Apart Research, BlueDot Impact, and Halcyon Futures for hosting the hackathon that initiated this project. Lambda.ai provided compute credits. Li-Lian Ang, Mackenzie Puig-Hall, and the Apart Lab Studio provided valuable feedback on our initial draft.\nTools used in writing this post: Claude Opus 4.5, Claude Sonnet 4.5, ChatGPT 5.2, NotebookLM, and SolveIt."
   }
 ]

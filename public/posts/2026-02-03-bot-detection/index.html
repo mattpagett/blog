@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-02-03">
+
+<title>Can We Use AI to Detect AI Bots on Social Media? – Matt Pagett</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-7ac2f9da8c2617a4fdd15004b4601015.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1930ca79613ba350e78d02d4e232674e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Matt Pagett</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Can We Use AI to Detect AI Bots on Social Media?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">research</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 3, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Short answer</strong>: We can reliably detect obvious spam bots using large language models. However, we do not know if we can reliably detect human-like AI accounts.</p>
+<p>This post summarizes our findings from the November 2025 Apart Research def/acc hackathon, during which Andreas Raaskov and I <a href="https://apartresearch.com/project/comparative-llm-methods-for-social-media-bot-detection-u9s4">tested</a> whether large language models (LLMs) could help detect social media bots on Bluesky. One of our key findings: when bots are not obvious, the prompts we use to detect them strongly influence the detection results.</p>
+<p>Our central question: <strong>Using only publicly visible content and metadata, can we detect an AI-generated account that mimics a human user?</strong></p>
+<section id="in-brief" class="level2">
+<h2 class="anchored" data-anchor-id="in-brief">In brief:</h2>
+<ul>
+<li>Existing algorithmic methods and our LLM-based methods worked well on <strong>obvious spam and scam bots</strong>.</li>
+<li>These methods failed on the <strong>hard cases</strong>: accounts behaving like ordinary, engaged humans.</li>
+<li>LLM-based detection varies wildly depending on prompt wording (from ~9% to ~91% of the same accounts flagged).</li>
+<li>Without reliable <strong>ground truth</strong>, detection results are not interpretable.</li>
+<li>A major risk today is <strong>false positives</strong>.</li>
+</ul>
+</section>
+<section id="why-bot-detection-is-getting-harder" class="level2">
+<h2 class="anchored" data-anchor-id="why-bot-detection-is-getting-harder">Why Bot Detection Is Getting Harder</h2>
+<p>Bot detection used to be straightforward. Automated accounts posted constantly, followed thousands of users at once, or repeated the same promotional text. Existing tools are very good at catching that behavior. We found that low-cost LLMs were also able to detect this kind of bot behavior.</p>
+<p>Recently, the quality of bot text generation has improved dramatically. Modern LLMs can produce short, context-appropriate replies that look indistinguishable from normal human participation, especially in settings like social media threads. An account powered by an LLM does not need to post frequently, coordinate with other accounts, or impersonate a specific individual to be disruptive. LLMs can simply participate.</p>
+<p>This change raises the question we set out to test.</p>
+</section>
+<section id="our-approach" class="level2">
+<h2 class="anchored" data-anchor-id="our-approach">Our Approach</h2>
+<p>To examine this question, we chose to look at Bluesky posts because its data is openly accessible via the AT Protocol and the platform functions as a high-engagement public discussion space.</p>
+<p>We evaluated four detection approaches: 1. <strong>Follower / following patterns</strong> 2. <strong>Posting frequency and timing</strong> 3. <strong>Text-based heuristics</strong> (repetition, templating, typical AI phrases) 4. <strong>LLMs used as judges,</strong> via zero-shot prompts (asking a model to judge without prior examples) asking whether an account appeared AI-generated</p>
+<p>A key challenge with LLM-based detection is <strong>prompt sensitivity</strong>: the exact wording of the question can dramatically change results. We tested multiple prompt variations to examine this effect.</p>
+<p>We tested these on two datasets:</p>
+<ul>
+<li><strong>A known bot list,</strong> consisting mostly of obvious spam and scam accounts</li>
+<li><strong>A real-world sample</strong> of 1,000 accounts that had replied to popular posts in active discussion threads</li>
+</ul>
+<p>The second sample was significantly more challenging to analyze, because it contained accounts that looked human-generated.</p>
+</section>
+<section id="obvious-cases-were-easily-detectable" class="level2">
+<h2 class="anchored" data-anchor-id="obvious-cases-were-easily-detectable">Obvious Cases Were Easily Detectable</h2>
+<p>Against the known bot list, all of our methods worked.</p>
+<p>Algorithmic methods flagged accounts with non-human posting rates, suspicious follower ratios, and repetitive promotional content. LLM-based judges also detected nearly all of these accounts, across multiple prompt variations. Our findings aligned with prior work and deployed tools, including algorithmic bot detectors, keyword-based heuristics, and network analysis approaches, all of which are generally effective against high-volume spam and coordinated campaigns.</p>
+<p>This result is reassuring, but not surprising. These are exactly the kinds of bots that existing detection systems are designed to catch. LLMs turn out to be quite good at detecting them too.</p>
+</section>
+<section id="detection-failed-for-the-difficult-cases" class="level2">
+<h2 class="anchored" data-anchor-id="detection-failed-for-the-difficult-cases">Detection Failed for the Difficult Cases</h2>
+<p>When we applied the same methods to the 1,000 accounts drawn from active reply threads, the results changed dramatically.</p>
+<section id="algorithmic-methods" class="level3">
+<h3 class="anchored" data-anchor-id="algorithmic-methods">Algorithmic Methods:</h3>
+<p>Algorithmic methods detected almost no bots in this sample.</p>
+<p>Follower ratios looked normal. Posting rates fell within human ranges. Text analysis found little repetition or templating. Either there were no sophisticated bots in this sample—or the bots were behaving exactly like humans.</p>
+</section>
+<section id="llm-based-detection" class="level3">
+<h3 class="anchored" data-anchor-id="llm-based-detection">LLM-Based Detection:</h3>
+<p>LLM-based detection gave unstable responses.</p>
+<p>Different prompts produced radically different results:</p>
+<ul>
+<li>One prompt flagged <strong>~16%</strong> of accounts as bots</li>
+<li>Another flagged <strong>~21%</strong></li>
+<li>Another flagged <strong>~29%</strong></li>
+<li>A highly specific prompt flagged <strong>~91%</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="bot_infographic.png" class="img-fluid figure-img"></p>
+<figcaption>Bot detection infographic</figcaption>
+</figure>
+</div>
+<center>
+<i>The chart in the center shows how the same accounts receive dramatically different classifications depending only on prompt wording.
+</i></center><i>
+</i><p><i></i></p>
+</section>
+</section>
+<section id="prompt-sensitivity-is-a-core-problem" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-sensitivity-is-a-core-problem">Prompt Sensitivity Is a Core Problem</h2>
+<p>The variability in results reveals a deeper issue.</p>
+<p>When accounts fall into an ambiguous middle ground—posting frequently, expressing opinions, engaging in debate—LLMs do not have a stable basis for classification. Prompting becomes <em>prompt steering</em>: asking the model to be more or less suspicious directly changes the outcome.</p>
+<p>In one case, an account was flagged as “likely AI” by all four prompts. Manual review suggested the posts came from a politically engaged human who posting frequently and contextually. The LLM had mistaken this user’s enthusiasm for automation. Without ground truth, we cannot tell which prompt, if any, is accurate.</p>
+<ul>
+<li>Is 91% detection uncovering hidden bots?</li>
+<li>Or is it massively over-flagging humans?</li>
+<li>Is 16% conservative and accurate—or simply missing things?</li>
+</ul>
+<p>There is no way to know which method is accurate without ground truth - and how can we assess a ground truth about bots designed to be undetectable?</p>
+</section>
+<section id="why-this-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
+<p>Two risks: one is that undetected bots flood social media spaces, influencing conversations in ways completely unknown to humans on the platform - a major concern. Another risk is <strong>false positives</strong>. If detection systems cannot distinguish between human-like AI behavior and normal human participation, they will inevitably mislabel real users—especially those who post frequently, argue passionately, or communicate in unusual styles. Both of these risks pose dangers for platform governance, and user trust.</p>
+</section>
+<section id="the-real-bottleneck-ground-truth" class="level2">
+<h2 class="anchored" data-anchor-id="the-real-bottleneck-ground-truth">The Real Bottleneck: Ground Truth</h2>
+<p>The fundamental barrier for our research is the absence of reliable examples of bots that act like humans.</p>
+<p>We do not have a validated dataset of human-like, LLM-generated social media accounts that:</p>
+<ul>
+<li>Behave organically over time</li>
+<li>Show normal engagement patterns</li>
+<li>Avoid obvious spam or coordination signals</li>
+</ul>
+<p>Without such a reference, detection results cannot be calibrated, compared, or meaningfully evaluated.</p>
+<p><strong>In short</strong>: Our intervention was to test LLM-based detection against realistic, ambiguous accounts rather than obvious bots. The main problem we face now is a lack of reliable reference points.</p>
+</section>
+<section id="what-were-doing-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-were-doing-next">What We’re Doing Next</h2>
+<p>Our next step is to build a <strong>synthetic reference dataset</strong>—not to deploy bots on live platforms, but to generate realistic posting histories offline.</p>
+<p>The goal is to create controlled examples of accounts that are:</p>
+<ul>
+<li>Indistinguishable from humans to casual inspection</li>
+<li>Generated using multiple models and prompting styles</li>
+<li>Accompanied by realistic metadata and engagement patterns</li>
+</ul>
+<p>With such a dataset, we can ask a meaningful question: <strong>are there any signals—textual or behavioral—that consistently distinguish human expression from AI-generated participation?</strong></p>
+<p>It is possible the answer will be “no.” In that case, knowing that we cannot detect LLM accounts will also be an important finding.</p>
+<p>Future extensions to this research that we have considered but have not yet attempted include:</p>
+<ul>
+<li>Larger samples across different languages and communities</li>
+<li>Few-shot or fine-tuned detection models (using additional training methods to improve the LLM’s detection behavior)</li>
+<li>Broader network-level analysis combined with content analysis - potentially partnering with platform operators</li>
+</ul>
+<p>We intentionally scoped this work to evaluate <em>zero-shot LLM judgment</em>.</p>
+</section>
+<section id="how-this-fits-with-prior-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-this-fits-with-prior-work">How This Fits with Prior Work</h2>
+<p><a href="https://dl.acm.org/doi/10.1007/s00521-023-08352-z">Prior work</a> on social media bot detection has focused largely on algorithmic signals (such as posting frequency or network structure) and, <a href="https://arxiv.org/abs/2402.00371">more recently</a>, on deep learning classifiers trained on labeled datasets. These approaches work well for coordinated campaigns and spam bots, but they assume access to reliable ground truth.</p>
+<p>Recent experimental work has also shown that modern LLMs can pass controlled <a href="https://arxiv.org/abs/2503.23674">Turing-style evaluations</a>, suggesting that text alone may no longer reliably distinguish humans from AI. Work has also been done to show that LLMs can be effective at <a href="https://arxiv.org/abs/2402.10350">zero-shot anomaly detection</a>, which we think will be useful to pursue in this context.</p>
+</section>
+<section id="limits-and-open-questions" class="level2">
+<h2 class="anchored" data-anchor-id="limits-and-open-questions">Limits and Open Questions</h2>
+<p>Our work does not show that sophisticated LLM bots are currently operating on Bluesky. If they are, we have not yet found a reliable method for detecting them. Our work shows how fragile current approaches are when applied to real-world, ambiguous cases.</p>
+<p>There is also a deeper uncertainty: it may be that human and AI-generated social media behavior has already converged to the point where reliable distinction is impossible using content alone, raising the possibility that human and AI social media behavior may already be converging in these contexts.</p>
+<p>Because we lack verified examples of human-like AI accounts, we cannot estimate detection accuracy yet. Testing that is the point of the next phase of research.</p>
+<p><strong>Ethical note</strong>: We deliberately avoided publishing lists of flagged accounts, with the exception of referencing a published known botlist. Our results showed high false-positive risk, including misclassifying human users as bots. Any future dataset or detection work must prioritize harm minimization, anonymization, and informed consent, especially when classifications can affect real people.</p>
+</section>
+<section id="bottom-line" class="level2">
+<h2 class="anchored" data-anchor-id="bottom-line">Bottom Line</h2>
+<p>Current detection methods are effective against obvious bots and spam. These detection methods struggle where the problem matters most - ambiguous cases. This problem will be exacerbated as LLM quality improves.</p>
+<p>Open questions: - Are there any stable signals that distinguish human and AI participation at all? If so, might these vanish in the future? - Will platforms need to shift from detection to disclosure or provenance mechanisms? - How could moderation systems handle inevitable ambiguity without harming users?</p>
+<p>These are gaps our research aims to help close.</p>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code:</h2>
+<p>https://github.com/AndreasRaaskov/Bot-Detector</p>
+<p>Contact: matt@mattpagett.dev</p>
+<p>We’d love to hear your ideas. If you’re working on related problems or have thoughts on approaches we should try, please reach out.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We would like to thank Apart Research, BlueDot Impact, and Halcyon Futures for hosting the hackathon that initiated this project. Lambda.ai provided compute credits. Li-Lian Ang, Mackenzie Puig-Hall, and the Apart Lab Studio provided valuable feedback on our initial draft.</p>
+<p>Tools used in writing this post: Claude Opus 4.5, Claude Sonnet 4.5, ChatGPT 5.2, NotebookLM, and SolveIt.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
